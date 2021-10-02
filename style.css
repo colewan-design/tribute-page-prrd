@@ -1,31 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 *{
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 body{
-    background-color: rgb(241, 239, 239);
-    font-family: cursive;
+   
+    
+    height: max-content;
+
 }
-img {
-    height: 100vh;
-    width: 50vw;
-    filter: grayscale(1.0);
-    opacity: .9;
-    border-radius: 2%;
+a, h1, h3{ color: rgb(243, 244, 245);}
+nav, a{
+    list-style: none;
+    text-decoration: none;
 }
-.portrait{
-    font-size: 25px;
-    text-align: center;
+nav{
+    position: fixed;
+}
+.navigation{
+    background: rgb(35, 35, 36);
+    width: 100vw;
+    height: 12vh;
+  
 }
 header{
-    align-items: center;
+    margin: auto;
+    width: 100%;
+    height: 100vh;
+    right: 10em;
+    background: rgb(35, 35, 36);
+}
+ul{
+    position: relative;
+    display: flex;
+    left: 20em;
+    list-style: none;
+    top: 1em;
+    width: 18vw;
+    height: 7vh;
+    padding: 1em;
+    justify-content: center;
     
 }
-main{
-    text-align: center;
+li{
+   padding-right:3em;
+   width: 150px;
+   height: 50px;
+   background: transparent;
+   padding-top: 1em;
+   padding-left: 1em;
+
+
+}
+  
+
+
+h1{
+    padding-bottom: 1em;
 }
 .title{
-    margin: 5px;
-    left: 5px;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    top: 15em;
+    font-size: 20px;
+}
+.About{
+   padding: 2em;
+   height: 110vh;
+   padding-top: 7em;
+}
+main{
+    padding-top: 5em;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 60%;
+    margin: auto;
+    
+}
+img{
+    margin-top: 12em;
+    margin-left: 4em;
+    height: 50vh;
+    width: 20vw;
+}
+p{
+    padding-bottom: 5em;
+}
+.quote{
+    height:20vh;
+    background: rgb(35, 35, 36);
+    align-items: center;
+    text-align: center;
+}
+.word{
+    padding-top: 2em;
+    color: rgb(243, 244, 245);
+}
+
+a:hover{
+    opacity: .5;
+}
+@media screen and (max-width: 768px) {
+	.body {
+		flex-direction: column;
+	}
+    header{
+     
+      
+        font-size: 1.5rem;
+        height: 100vh;
+    }
+    .navigation{
+       width: 100vw;
+       height: 20vh;
+    }
+    ul{
+      
+       left: 12em; 
+    }
 }
